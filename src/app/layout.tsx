@@ -6,6 +6,7 @@ import '@/styles/custom.css';
 import { type Metadata } from "next";
 import { Open_Sans} from "next/font/google"
 import Footer from "@/components/footer";
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -25,30 +26,24 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
-      {/* Libraries Stylesheet  */}
-    <link href="/lib/animate/animate.min.css" rel="stylesheet"/>
-    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
-    
-
+        {/* Libraries Stylesheet */}
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
       </head>
       <body className={openSans.className}>
         <NavigationBar></NavigationBar>
         {children}
         <Footer/>
-        {/* <!-- JavaScript Libraries --> */}
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" async></script>
-    <script src="/lib/wow/wow.min.js" async></script>
-    <script src="/lib/easing/easing.min.js" async></script>
-    <script src="/lib/waypoints/waypoints.min.js" async></script>
-    <script src="/lib/owlcarousel/owl.carousel.min.js" async></script>
-    <script src="/lib/counterup/counterup.min.js" async></script>
-
-    {/* <!-- Template Javascript --> */}
-    <script src="js/main.js"></script>
-        </body>
-
+        {/* JavaScript Libraries */}
+        <Script src="https://code.jquery.com/jquery-3.4.1.min.js" strategy="lazyOnload" />
+        <Script src="/lib/wow/wow.min.js" strategy="lazyOnload" />
+        <Script src="/lib/easing/easing.min.js" strategy="lazyOnload" />
+        <Script src="/lib/waypoints/waypoints.min.js" strategy="lazyOnload" />
+        <Script src="/lib/owlcarousel/owl.carousel.min.js" strategy="lazyOnload" />
+        <Script src="/lib/counterup/counterup.min.js" strategy="lazyOnload" />
+        {/* Template Javascript */}
+        <Script src="js/main.js" strategy="lazyOnload" />
+      </body>
     </html>
   );
 }

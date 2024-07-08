@@ -1,11 +1,7 @@
 'use client'
 
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebookF, faYoutube, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
+import { Container } from 'react-bootstrap';
 
 const Footer = () => {
   return (
