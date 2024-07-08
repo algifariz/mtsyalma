@@ -1,0 +1,190 @@
+
+.image-hover {
+transition: transform 0.3s ease-in-out; /* Smooth transition for scaling effect */
+}
+
+.image-hover:hover {
+transform: scale(2); /* Scale the image to twice its original size */
+}
+.btn-custom {
+background-color: #007bff; /* Warna dasar tombol */
+color: #ffffff; /* Warna teks */
+border: none; /* Hapus border default */
+border-radius: 30px; /* Sudut membulat */
+padding: 12px 30px; /* Ukuran padding */
+text-decoration: none; /* Hapus garis bawah */
+display: inline-block; /* Agar tombol mengikuti konten */
+transition: background-color 0.3s ease, transform 0.3s ease; /* Animasi transisi */
+}
+
+/* Efek hover */
+.btn-custom:hover {
+background-color: #022B6D; /* Warna saat di-hover */
+transform: scale(1.05); /* Perbesar sedikit saat di-hover */
+color: #ffffff; /* Warna teks tetap */
+}
+.card {
+border: none;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s;
+}
+/* //rdm */
+
+.team-link {
+display: flex;
+align-items: center;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.team-icon {
+width: 90px;
+height: 90px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.3s ease;
+background-color: #007bff;
+border-radius: 10px;
+}
+
+.team-icon i {
+transition: all 0.3s ease;
+}
+
+.team-content {
+height: 90px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #f8f9fa;
+padding-left: 15px;
+border-radius: 10px;
+transition: all 0.3s ease;
+}
+
+.team-content h5,
+.team-content span {
+color: #000;
+transition: all 0.3s ease;
+}
+
+.team-link:hover .team-icon {
+transform: scale(1.1);
+background-color: #0056b3;
+}
+
+.team-link:hover .team-content {
+transform: scale(1.1);
+background-color: #0056b3;
+}
+.team-link:hover .team-icon i {
+color: #ffeb3b;
+}
+
+.team-link:hover .team-content {
+background-color: #e2e6ea;
+}
+
+.team-link:hover .team-content h5 {
+color: #007bff;
+}
+
+.team-link:hover .team-content span {
+color: #0056b3;
+}
+
+/* //hover */
+.team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.team-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.team-link:hover .team-icon {
+    background-color: #0056b3;
+}
+
+.team-link:hover .team-icon i {
+    color: #ffeb3b;
+}
+
+.team-link:hover .team-content {
+    background-color: #e2e6ea;
+}
+
+.team-link:hover h5, .team-link:hover span {
+    color: #0056b3;
+}
+
+.team-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background-color: #007bff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.team-icon i {
+    font-size: 2em;
+    color: #fff;
+}
+
+.team-content {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+}
+
+.team-content h5, .team-content span {
+    transition: color 0.3s ease;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.wow {
+    visibility: visible;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.col-lg-4, .col-md-6 {
+    flex: 1 0 30%;
+    margin: 10px;
+}
+
+/* ... */

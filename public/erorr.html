@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedang Perbaikan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            background: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #333;
+        }
+        .container p {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0;
+        }
+        .container .icon {
+            font-size: 4em;
+            color: #f39c12;
+            margin: 20px 0;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .container .contact {
+            margin-top: 30px;
+            font-size: 1em;
+            color: #333;
+        }
+        .container .contact a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .container .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <i class="fas fa-tools"></i>
+        </div>
+        <h1>Sedang Perbaikan</h1>
+        <p>Maaf, saat ini situs kami sedang dalam proses perbaikan. Kami akan segera kembali!</p>
+        <p>Untuk informasi lebih lanjut, hubungi kami di <a href="mailto:info@example.com">info@example.com</a>.</p>
+        <div class="contact">
+            <p>Terima kasih atas kesabaran Anda!</p>
+            <p><a href="/">Kembali ke Halaman Utama</a></p>
+        </div>
+    </div>
+</body>
+</html>
