@@ -6,7 +6,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 const TeacherData = () => {
   return (
     <Container className="my-5">
-      <h1 className="text-center text-dark mb-4">Data Guru MTs AL-MA'ARIJ</h1>
+      <h1 className="text-center text-dark mb-4">Data Guru MTs AL-MA&apos;ARIJ</h1>
       <Row className="g-4">
         {/* Card 1 */}
         <Col md={6} lg={4}>

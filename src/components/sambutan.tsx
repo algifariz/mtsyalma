@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Container, Row, Col, Button, Modal } from 'react-bootstrap';
-
+import Image from 'next/image'; // Add this import
 
 const WelcomeSection = () => {
   // State untuk mengatur visibilitas modal
@@ -25,7 +25,7 @@ const WelcomeSection = () => {
     <>
       <Container>
         <div className="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
-          <h1 className="display-5 mb-4">Selamat Datang Di MTs AL-MA'ARIJ</h1>
+          <h1 className="display-5 mb-4">Selamat Datang Di MTs AL-MA&apos;ARIJ</h1> {/* Escaped single quote */}
         </div>
       </Container>
 
@@ -34,10 +34,13 @@ const WelcomeSection = () => {
           <Row className="g-5 align-items-center">
             <Col lg={6} className="wow fadeInUp" data-wow-delay="0.1s">
               <div className="position-relative me-lg-4">
-                <img
+                <Image
                   className="img-fluid w-100"
                   src="/img/pngtree-principal-clipart-image-of-cartoon-character-standing-with-glasses-and-tie-vector-png-image_6812526.png"
                   alt="Principal"
+                  layout="responsive"
+                  width={700}
+                  height={475}
                 />
                 <span
                   className="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block"
@@ -46,7 +49,6 @@ const WelcomeSection = () => {
                 <Button
                   variant="link"
                   className="btn-play"
-                 
                   onClick={() => handleShow('https://www.youtube.com/embed/yAIbHfaNq98')}
                 >
                   <span></span>

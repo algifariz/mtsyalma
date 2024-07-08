@@ -1,14 +1,13 @@
 'use client'
 
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const NavigationBar = () => {
   return (
     <Navbar bg="white" expand="lg" sticky="top" className="navbar py-0 pe-5">
         <Navbar.Brand href="home" className="ps-5 me-0">
-          <h1 className="text-white m-0">MTs AL-MA'ARIJ</h1>
+          <h1 className="text-white m-0">MTs AL-MA&apos;ARIJ</h1>
         </Navbar.Brand>
       
         <Navbar.Toggle aria-controls="navbarCollapse" className="me-0" />

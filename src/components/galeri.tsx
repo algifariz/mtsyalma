@@ -4,6 +4,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image';
 
 const Gallery = () => {
     const settings = {
@@ -59,7 +60,7 @@ const Gallery = () => {
         <Slider {...settings}>
           {galleryItems.map((item, index) => (
             <div key={index} className="project-item">
-              <img className="img-fluid" src={item.src} alt={item.title} />
+              <Image className="img-fluid" src={item.src} alt={item.title} width={500} height={300} />
               <div className="project-title">
                 <h5 className="text-primary mb-0">{item.title}</h5>
               </div>

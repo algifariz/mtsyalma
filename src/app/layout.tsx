@@ -38,12 +38,12 @@ export default function RootLayout({
         {children}
         <Footer/>
         {/* <!-- JavaScript Libraries --> */}
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="/lib/wow/wow.min.js"></script>
-    <script src="/lib/easing/easing.min.js"></script>
-    <script src="/lib/waypoints/waypoints.min.js"></script>
-    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="/lib/counterup/counterup.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" async></script>
+    <script src="/lib/wow/wow.min.js" async></script>
+    <script src="/lib/easing/easing.min.js" async></script>
+    <script src="/lib/waypoints/waypoints.min.js" async></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js" async></script>
+    <script src="/lib/counterup/counterup.min.js" async></script>
 
     {/* <!-- Template Javascript --> */}
     <script src="js/main.js"></script>

@@ -1,6 +1,5 @@
 // import FactsSection from "@/components/data";
 const FactsSection =  dynamic(() => import('@/components/data'), { ssr: false });
-import Footer from "@/components/footer";
 import MyCarousel from "@/components/korsel";
 import PpdbSection from "@/components/ppdb";
 import WelcomeSection from "@/components/sambutan";

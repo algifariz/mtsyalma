@@ -9,12 +9,12 @@ const SchoolProfile = () => {
     <Container className="my-5">
       <Card className="mx-auto">
         <Card.Body>
-          <h1 className="text-center text-blue mb-4">Profil MTs AL-MA'ARIJ</h1>
+          <h1 className="text-center text-blue mb-4">Profil MTs AL-MA&apos;ARIJ</h1>
           <Table bordered hover responsive className="text-left">
             <tbody>
               <tr>
                 <td className="py-2 px-4 font-weight-bold">Nama Sekolah</td>
-                <td className="py-2 px-4">MTs AL-MA'ARIJ</td>
+                <td className="py-2 px-4">MTs AL-MA&apos;ARIJ</td>
               </tr>
               <tr>
                 <td className="py-2 px-4 font-weight-bold">Jenjang</td>

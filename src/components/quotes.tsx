@@ -4,6 +4,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Image from 'next/image'; // Import Image from next/image
 
 interface Testimonial {
   img: string;
@@ -54,9 +55,15 @@ const Testimonials: React.FC = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="testimonial-item text-center">
               <div className="testimonial-img position-relative">
-                <img className="img-fluid rounded-circle mx-auto mb-5" src={testimonial.img} alt={`Client ${testimonial.name}`} />
+                <Image 
+                  className="img-fluid rounded-circle mx-auto mb-5" 
+                  src={testimonial.img} 
+                  alt={`Client ${testimonial.name}`} 
+                  width={150} // Adjust width as needed
+                  height={150} // Adjust height as needed
+                />
                 <div className="btn-square bg-primary rounded-circle mx-auto">
-                  <i className="fa fa-quote-left text-white  "></i>
+                  <i className="fa fa-quote-left text-white"></i>
                 </div>
               </div>
               <div className="testimonial-text text-center rounded p-4">

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Carousel, Container, Row, Col, Button } from 'react-bootstrap';
+import Image from 'next/image';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MyCarousel = () => {
@@ -9,10 +10,13 @@ const MyCarousel = () => {
       <div className="container-fluid px-0 mb-5">
         <Carousel id="header-carousel" className="carousel slide">
           <Carousel.Item >  
-            <img
+            <Image
               className="d-block w-100"
-              src="img/il-photo-01.png"
+              src="/img/il-photo-01.png"
               alt="First slide"
+              layout="responsive"
+              width={1920}
+              height={1080}
             />
             <Carousel.Caption className="carousel-caption">
               <Container>
@@ -20,7 +24,7 @@ const MyCarousel = () => {
                   <Col lg={10} className="text-start">
                     <p className="fs-5 fw-medium text-primary text-uppercase animated slideInRight"></p>
                     <h1 className="display-1 text-white mb-5 animated slideInRight">
-                      Selamat Datang Di MTs AL-MA'ARIJ
+                      Selamat Datang Di MTs AL-MA&apos;ARIJ
                     </h1>
                     {/* <Button className="btn-primary py-3 px-5 animated slideInRight">Explore More</Button> */}
                   </Col>
@@ -30,10 +34,13 @@ const MyCarousel = () => {
           </Carousel.Item>
   
           <Carousel.Item>  
-            <img
+            <Image
               className="d-block w-100"
-              src="img/three-asian-girls-veils-school-uniforms-stand-smiling-using-tablet-digital-while-carrying-ba_8595-24849.jpeg"
+              src="/img/three-asian-girls-veils-school-uniforms-stand-smiling-using-tablet-digital-while-carrying-ba_8595-24849.jpeg"
               alt="Second slide"
+              layout="responsive"
+              width={1920}
+              height={1080}
             />
             <Carousel.Caption className="carousel-caption">
               <Container>

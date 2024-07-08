@@ -1,14 +1,14 @@
 'use client'
 
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
 
 
 
 const GalleryFull = () => {
   return (
     <div className="container-custom">
-      <h1 className="text-center text-dark mb-4">Galeri MTs AL-MA'ARIJ</h1>
+      <h1 className="text-center text-dark mb-4">Galeri MTs AL-MA&apos;ARIJ</h1>
       <Row className="g-4">
         {/* Card 1 */}
         <Col md={6} lg={4}>

@@ -5,7 +5,7 @@ import React from 'react';
 const ContactInfo = () => {
   return (
     <div className="container-custom">
-      <h1 className="text-center text-dark mb-4">Kontak MTs AL-MA'ARIJ</h1>
+      <h1 className="text-center text-dark mb-4">Kontak MTs AL-MA&apos;ARIJ</h1>
       <div className="contact-info">
         <div className="info-box">
           <i className="fa fa-map-marker-alt"></i>
@@ -26,7 +26,7 @@ const ContactInfo = () => {
           <i className="fa fa-clock"></i>
           <h3>Jam Kerja</h3>
           <p>Senin - Kamis - Sabtu: 07:00 - 12:30</p>
-          <p>Jum'at: 07:00 - 11:00</p>
+          <p>Jum&apos;at: 07:00 - 11:00</p>
         </div>
       </div>
       <div className="map-container">

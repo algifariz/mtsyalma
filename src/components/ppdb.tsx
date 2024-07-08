@@ -3,6 +3,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaEnvelopeOpen, FaPhoneAlt } from 'react-icons/fa';
+import Image from 'next/image';
 
 const PpdbSection = () => {
   return (
@@ -12,10 +13,10 @@ const PpdbSection = () => {
           <Col lg={6}>
             <Row className="gx-3 h-100">
               <Col xs={6} className="align-self-start animate__animated animate__fadeInUp" style={{ animationDelay: '0.1s' }}>
-                <img className="img-fluid image-hover" src="/img/download.jpg" alt="Image Description" />
+                <Image className="img-fluid image-hover" src="/img/download.jpg" alt="Image Description" layout="responsive" width={500} height={500} />
               </Col>
               <Col xs={6} className="align-self-end animate__animated animate__fadeInDown" style={{ animationDelay: '0.1s' }}>
-                <img className="img-fluid image-hover" src="/img/download.jpg" alt="Image Description" />
+                <Image className="img-fluid image-hover" src="/img/download.jpg" alt="Image Description" layout="responsive" width={500} height={500} />
               </Col>
             </Row>
           </Col>
