@@ -6,7 +6,7 @@ import { Container, Card } from 'react-bootstrap';
 const VisionMission = () => {
   return (
     <Container className="my-5">
-      <h1 className="text-center text-blue mb-4">VISI DAN MISI MTs AL-MA'ARIJ</h1>
+      <h1 className="text-center text-blue mb-4">VISI DAN MISI MTs AL-MA&apos;ARIJ</h1>
 
       <section className="mb-4">
         <h2 className="mb-3 text-blue ">Visi</h2>

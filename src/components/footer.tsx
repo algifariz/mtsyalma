@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="bg-blue text-center py-4">
         <Container>
           <p className="mb-2 text-white">
-            Copyright &copy; <a className="fw-semi-bold text-white" href="#">MTs AL-MA'ARIJ</a>, All Right Reserved.
+            Copyright &copy; <a className="fw-semi-bold text-white" href="#">MTs AL-MA&apos;ARIJ</a>, All Right Reserved.
           </p>
         </Container>
       </div>
